@@ -24,7 +24,7 @@ const ShopProvider = ({children}: {children: ReactNode}) => {
         prev.filter( (keptItem: CartItem) => keptItem.position != cartItem.position )
     )}
 
-    const {products: fetchedProducts, loading, error} = useProducts();
+    const {products: fetchedProducts, loading} = useProducts();
 
     useEffect(() => { 
       if (!loading && fetchedProducts.length > 0) {

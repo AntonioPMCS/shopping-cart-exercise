@@ -11,7 +11,7 @@ import ShopProvider from './Context/ShopProvider.tsx'
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Layout />,
+    element: <Layout children />,
     children: [
       { path: "", element: <Products /> },
       { path: "product/:id", element: <Product /> },

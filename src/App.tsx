@@ -3,7 +3,6 @@ import Products from './pages/Products';
 import Cart from './pages/Cart';
 import Layout from './pages/Layout';
 import { BrowserRouter as Router, Routes } from 'react-router-dom';
-import { ShopProvider } from './Context/ShopProvider';
 
 function App() {
   return (

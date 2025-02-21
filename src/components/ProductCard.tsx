@@ -6,11 +6,11 @@ interface ProductCardProps {
   title: string;
   price: number;
   category: string;
-  description: string;
+  description?: string | undefined;
   image: string;
 }
 
-const ProductCard: React.FC<ProductCardProps> = ({ image, title, price, description }) => {
+const ProductCard: React.FC<ProductCardProps> = ({ image, title, price }) => {
   return (
     <div className="product-card">
       <div className="product-image-container">
